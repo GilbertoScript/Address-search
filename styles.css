@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* --- Acessibilidade --- */
+@media (max-width: 1080px) {
+	html {
+		font-size: 93.75%; /* 15px */
+	}
+}
+
+@media (max-width: 720px) {
+	html {
+		font-size: 87.5%; /* 14px */
+	}
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+button {
+	cursor: pointer;
+}
+
+input {
+	border: 0;
+}
+
+/* --- Conteúdo --- */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #0f1419;
+}
+
+main {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+main section h1 {
+	width: 100%;
+
+	background-color: #0a0e14;
+	color: whitesmoke;
+	text-align: center;
+
+	padding-bottom: 110px;
+	padding-top: 55px;
+}
+
+main section h1 i {
+	color: #39bae6;
+}
+
+main #form {
+	margin-top: -27px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* --- Search --- */
+main #form #first-form-section {
+	display: flex;
+	align-items: center;
+}
+
+main #form #first-form-section div input {
+	padding: 16px 32px;
+	border-radius: 32px 0 0 32px;
+}
+
+main #form #first-form-section button {
+	padding: 16px 32px;
+	border: 0;
+	border-radius: 0 32px 32px 0;
+	background: #39bae6;
+
+	transition: filter 0.8s;
+}
+
+main #form #first-form-section button:hover {
+	filter: brightness(0.8);
+	color: white;
+}
+
+/* --- Endereço --- */
+main #form #second-form-section {
+	margin-top: 55px;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-evenly;
+}
+
+main #form #second-form-section input {
+	padding: 16px 32px;
+}
+
+/* --- Endereço primeira coluna --- */
+main #form #second-form-section .first-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: #0a0e14;
+	padding: 32px;
+	border-radius: 16px;
+}
+
+main #form #second-form-section .first-column input {
+	border-radius: 8px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background: #0f1419;
+
+	color: white !important;
+}
+
+main #form #second-form-section input:hover {
+	cursor: auto;
+}
+
+main #form #second-form-section input::placeholder {
+	color: whitesmoke;
+}
+
+/* --- Endereço segunda coluna --- */
+main #form #second-form-section .second-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background-color: #0a0e14;
+	padding: 16px 32px;
+	border-radius: 16px;
+}
+
+main #form #second-form-section .second-column input {
+	border-radius: 8px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	background: #0f1419;
+
+	color: white !important;
+}
