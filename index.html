@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="icon" href="https://img-premium.flaticon.com/png/512/751/751463.png?token=exp=1621359612~hmac=a6b2b6ad5871efba43873685cea27a5b">
+
+
+	<link rel="stylesheet" href="styles.css">
+
+	<title>Address Search</title>
+</head>
+<body>
+
+	<main>
+		<section>
+			<h1>
+				Address Search
+				<i class="fas fa-search"></i>
+			</h1>
+
+		</section>
+
+		<section id="form">
+			<div id="first-form-section">
+				<div>
+					<input id="cep" type="number" class="form-control mb-5" placeholder="CEP"/>
+				</div>
+				<div>
+					<button 
+						onclick="getAddress(document.getElementById('cep').value)"
+					>
+						<i class="fas fa-search"></i>
+					</button>
+				</div>
+			</div>
+
+			<div id="second-form-section">
+				<div class="first-column">
+					<div>
+						<input 
+							id="endereco" 
+							type="text" 
+							class="form-control" 
+							placeholder="Endereço" 
+							readonly
+						/>
+					</div>
+
+					<div>
+						<input 
+							id="bairro" 
+							type="text" 
+							class="form-control" 
+							placeholder="Bairro" 
+							readonly 
+						/>
+					</div>
+				</div>
+
+				<div class="second-column">
+					<div>
+						<input id="cidade" type="text" class="form-control" placeholder="Cidade" readonly />
+					</div>
+
+					<div>
+						<input id="uf" type="text" class="form-control" placeholder="UF" readonly />
+					</div>
+
+					<div>
+						<input id="ddd" type="text" class="form-control" placeholder="DDD" readonly />
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="scripts.js"></script>
+
+</body>
+</html>
