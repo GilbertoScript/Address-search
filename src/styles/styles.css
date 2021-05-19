@@ -17,6 +17,22 @@
     font-size: 87.5%;
     /* 14px */
   }
+
+  main #form #first-form-section div input {
+    padding: 0.5rem 2rem;
+  }
+
+  main #form #second-form-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main #form #second-form-section .first-column {
+    margin-bottom: 2rem;
+  }
+  main #form #second-form-section .second-column {
+    margin-bottom: 2rem;
+  }
 }
 h1 {
   font-size: 2rem;
@@ -49,11 +65,25 @@ main section h1 {
   background-color: #0a0e14;
   color: whitesmoke;
   text-align: center;
-  padding-bottom: 110px;
+  padding-bottom: 6.875rem;
   padding-top: 55px;
 }
 main section h1 i {
   color: #39bae6;
+}
+main section h1 p {
+  font-size: 0.865rem;
+  font-weight: normal;
+  color: lightgrey;
+  margin-top: 0.865rem;
+}
+main section h1 p a {
+  text-decoration: none;
+  color: #39bae6;
+  transition: filter 0.8s;
+}
+main section h1 p a:hover {
+  filter: brightness(0.8);
 }
 main #form {
   margin-top: -27px;
@@ -69,13 +99,13 @@ main #form #first-form-section {
   align-items: center;
 }
 main #form #first-form-section div input {
-  padding: 16px 32px;
-  border-radius: 32px 0 0 32px;
+  padding: 1rem 4rem;
+  border-radius: 2rem 0 0 2rem;
 }
 main #form #first-form-section button {
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   border: 0;
-  border-radius: 0 32px 32px 0;
+  border-radius: 0 2rem 2rem 0;
   background: #39bae6;
   transition: filter 0.8s;
 }
@@ -94,7 +124,7 @@ main #form #second-form-section {
   /* --- Endereço segunda coluna --- */
 }
 main #form #second-form-section input {
-  padding: 16px 32px;
+  padding: 1rem 2rem;
 }
 main #form #second-form-section input:hover {
   cursor: auto;
@@ -107,13 +137,13 @@ main #form #second-form-section .first-column {
   flex-direction: column;
   justify-content: center;
   background-color: #0a0e14;
-  padding: 32px;
-  border-radius: 16px;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 main #form #second-form-section .first-column input {
-  border-radius: 8px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background: #0f1419;
   color: white !important;
 }
@@ -122,13 +152,13 @@ main #form #second-form-section .second-column {
   flex-direction: column;
   justify-content: center;
   background-color: #0a0e14;
-  padding: 16px 32px;
-  border-radius: 16px;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
 }
 main #form #second-form-section .second-column input {
-  border-radius: 8px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   background: #0f1419;
   color: white !important;
 }

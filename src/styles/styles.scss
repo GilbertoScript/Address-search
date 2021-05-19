@@ -15,6 +15,27 @@
 	html {
 		font-size: 87.5%; /* 14px */
 	}
+
+	main #form #first-form-section {
+
+		div input {
+			padding: 0.5rem 2rem;
+		}
+	}
+
+	main #form #second-form-section {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.first-column {
+			margin-bottom: 2rem;
+		}
+
+		.second-column {
+			margin-bottom: 2rem;
+		}
+	}
 }
 
 h1 {
@@ -51,11 +72,30 @@ main {
 		color: whitesmoke;
 		text-align: center;
 
-		padding-bottom: 110px;
+		padding-bottom: 6.875rem;
 		padding-top: 55px;
 
 		i {
 			color: #39bae6;
+		}
+
+		p {
+			font-size: 0.865rem;
+			font-weight: normal;
+			color: lightgrey;
+
+			margin-top: 0.865rem;
+
+			a {
+				text-decoration: none;
+				color: #39bae6;
+
+				transition: filter 0.8s;
+
+				&:hover {
+					filter: brightness(0.8);
+				}
+			}
 		}
 	}
 
@@ -74,14 +114,14 @@ main #form #first-form-section {
 	align-items: center;
 
 	div input {
-		padding: 16px 32px;
-		border-radius: 32px 0 0 32px;
+		padding: 1rem 4rem;
+		border-radius: 2rem 0 0 2rem;
 	}
 
 	button {
-		padding: 16px 32px;
+		padding: 1rem 2rem;
 		border: 0;
-		border-radius: 0 32px 32px 0;
+		border-radius: 0 2rem 2rem 0;
 		background: #39bae6;
 
 		transition: filter 0.8s;
@@ -102,7 +142,7 @@ main #form #second-form-section {
 	justify-content: space-evenly;
 
 	input {
-		padding: 16px 32px;
+		padding: 1rem 2rem;
 
 		&:hover {
 			cursor: auto;
@@ -120,13 +160,13 @@ main #form #second-form-section {
 		justify-content: center;
 
 		background-color: #0a0e14;
-		padding: 32px;
-		border-radius: 16px;
+		padding: 2rem;
+		border-radius: 1rem;
 
 		 input {
-			border-radius: 8px;
-			margin-top: 16px;
-			margin-bottom: 16px;
+			border-radius: 0.5rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 			background: #0f1419;
 
 			color: white !important;
@@ -140,13 +180,13 @@ main #form #second-form-section {
 		justify-content: center;
 
 		background-color: #0a0e14;
-		padding: 16px 32px;
-		border-radius: 16px;
+		padding: 1rem 2rem;
+		border-radius: 1rem;
 
 		input {
-			border-radius: 8px;
-			margin-top: 16px;
-			margin-bottom: 16px;
+			border-radius: 0.5rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 			background: #0f1419;
 
 			color: white !important;
