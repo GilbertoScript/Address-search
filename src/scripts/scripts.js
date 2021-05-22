@@ -2,6 +2,10 @@
 
 function getAddress(cep) {
 
+	if(cep == '' || cep.length >= 9) {
+		alert('Por favor preencha corretamente o campo CEP!')
+	}
+
 	let url = `https://viacep.com.br/ws/${cep}/json/`
 	
 	let xmlHttp = new XMLHttpRequest();
@@ -27,5 +31,4 @@ function getAddress(cep) {
 	}
 
 	xmlHttp.send();
-	
 }
