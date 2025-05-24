@@ -3,7 +3,15 @@
 function getAddress(cep) {
 
 	if(cep == '' || cep.length >= 9 || cep.length <= 7) {
-		alert('Por favor preencha corretamente o campo CEP!')
+		Swal.fire({
+		  toast: true,
+		  position: 'top-end',
+		  icon: 'error',
+		  title: 'Por favor preencha corretamente o campo CEP!',
+		  showConfirmButton: false,
+		  timer: 3000,
+		  timerProgressBar: true
+		})
 	}
 
 	let url = `https://viacep.com.br/ws/${cep}/json/`
